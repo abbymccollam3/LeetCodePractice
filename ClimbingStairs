@@ -1,0 +1,12 @@
+class Solution {
+public:
+    int climbStairs(int n) {
+        // there is 1 way to climb the stairs if n = 0 or n = 1 (standing or 1 step)
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+
+        // need to return the total amount of ways
+        return climbStairs(n-1) + climbStairs(n-2); 
+    }
+};
