@@ -18,10 +18,10 @@ public:
             // if the letter has an odd frequency
             else {
                 count += entry.second -1;
-                flag = true;
+                flag = true; // set flag to true for odd frequency count
             }
         }
 
-        return (flag) ? count + 1 : count;
+        return (flag) ? count + 1 : count; // make sure to only add one letter with odd frequency
     }
 };
